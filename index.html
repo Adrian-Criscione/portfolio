@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body>
+
+    <!-- Menú -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#informacion">Información General</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#redes">Redes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Presentación inicial con foto -->
+    <section id="presentacion" class="presentacion">
+        <img src="Images/Mi foto.jpeg" alt="Mi Foto" class="foto-presentacion">
+        <h1>¡Hola! Soy Adrian</h1>
+        <p>Desarrollador Web apasionado por crear soluciones digitales.</p>
+    </section>
+
+    <!-- Información general -->
+    <section id="informacion" class="informacion">
+        <h2>Información General</h2>
+        <p>Soy José Adrián Criscione, especialista en marketing digital con amplia experiencia en Google Analytics 4, 
+            Google Tag Manager, Google Ads y Facebook Business Manager. He liderado proyectos SEO exitosos, mejorando el posicionamiento orgánico 
+            y la autoridad web de diversos clientes. Mis habilidades en desarrollo web y programación me permiten ofrecer soluciones integrales a medida. 
+            Soy un profesional analítico y orientado a resultados, siempre a la vanguardia de las últimas tendencias del sector.</p>
+    </section>
+
+    <!-- Conocimientos -->
+    <section id="conocimientos" class="conocimientos">
+        <h2>Conocimientos</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3 (Flexbox, Grid)</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-git"></i> Git & GitHub</li>
+            <li><i class="fas fa-cog"></i> C/C++</li>
+            <li><i class="fas fa-code"></i> C# .NET Framework</li>
+            <li><i class="fas fa-database"></i> Análisis e Ingeniería de Datos</li>
+        </ul>
+    </section>
+    
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto...</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto...</p>
+        </div>
+    </section>
+
+    <!-- Redes -->
+    <section id="redes" class="redes">
+        <h2>Conéctate conmigo</h2>
+        <ul>
+            <li><a href="https://github.com/Adrian-Criscione" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jose-adrian-criscione/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/j.adrian.criscione/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar-formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -87,3 +87,12 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => successMessage.remove(), 5000); // El mensaje desaparece después de 5 segundos
     }
 });
+// Mostrar el botón cuando el usuario baja 200px
+window.onscroll = function() {
+    let boton = document.getElementById('volverInicio');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      boton.style.display = 'block';
+    } else {
+      boton.style.display = 'none';
+    }
+  };

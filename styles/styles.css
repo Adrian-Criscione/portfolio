@@ -69,18 +69,18 @@ ul li i {
 
 .foto-presentacion {
     border-radius: 50%;
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
     margin-bottom: 20px;
 }
 
 .presentacion h1 {
-    font-size: 2.5em;
+    font-size: 4em;
     margin: 10px 0;
 }
 
 .presentacion p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #333;
 }
 
@@ -91,7 +91,8 @@ section {
 }
 
 h2 {
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    font-size: 3em;    
 }
 
 .center{
@@ -203,8 +204,10 @@ html {
     border-radius: 10px;
     padding: 20px;
     width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+
 }
 
 .card.proyectos {
@@ -217,7 +220,7 @@ html {
     border-radius: 10px;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
 .card:hover {
@@ -265,37 +268,70 @@ html {
         max-width: 350px;
     }
 }
-.redes h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.redes ul {
+/* Estilos para el título de la sección */
+.redes h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de la lista */
+  .redes ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Para que los elementos se alineen en fila */
-    justify-content: space-around; /* Espacio entre cada elemento */
-    align-items: center; /* Alinea verticalmente */
-  }
-  
-  .redes li {
     display: flex;
+    justify-content: space-around;
     align-items: center;
   }
   
+  /* Estilo para los elementos de la lista */
+  .redes li {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    margin: 0 15px; /* Añade espacio entre los elementos */
+  }
+  
+  /* Enlaces de redes */
   .redes a {
     text-decoration: none;
     color: #000;
     font-size: 18px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease; /* Añade una animación de transición */
   }
   
+  /* Imagen del icono */
   .icono-red {
-    width: 100px; /* Ajusta el tamaño del icono */
-    height: 100px;
-    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo del párrafo debajo de las imágenes */
+  .redes p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Efecto hover */
+  .redes a:hover {
+    transform: scale(1.1); /* Amplía un poco el tamaño al hacer hover */
+    color: #007bff; /* Cambia el color del texto al hacer hover */
+  }
+  
+  /* Mejorar el aspecto en dispositivos móviles */
+  @media (max-width: 768px) {
+    .redes ul {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+  
+    .redes li {
+      margin-bottom: 20px;
+    }
   }
 
   /* Configuración del contenedor parallax */
@@ -373,5 +409,44 @@ html {
     font-family: "Mukta", sans-serif;
     font-weight: 800;
     font-style: normal;
+  }
+  .gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .footer{
+    text-align: center;
+  }
+  
+  /* Botón flotante */
+.btn-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Efecto hover para el botón flotante */
+  .btn-flotante:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Mostrar el botón flotante solo cuando la página esté desplazada hacia abajo */
+  #volverInicio {
+    display: none;
   }
   

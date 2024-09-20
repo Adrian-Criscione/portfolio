@@ -15,10 +15,8 @@
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    
-    />
   </head>
   <body class="parallax .mukta-extrabold">
     <!-- Menú -->
@@ -39,16 +37,16 @@
     <section id="presentacion" class="presentacion">
       <img src="img/mi-foto.jpeg" alt="Mi Foto" class="foto-presentacion" />
       
-      <h1 class="mukta-medium">¡Hola! Soy Adrian</h1>
+      <h1 class="mukta-extrabold">¡Hola! Soy Adrian</h1>
       <p class="mukta-regular">Desarrollador Web apasionado por crear soluciones digitales. Estudiante de programación en la UTN. </p>
 
     </section>
 
     <!-- Información general -->
     <section id="informacion" class="informacion">
-      <h2>Información General</h2>
+      <h2 class="mukta-bold">Información General</h2>
       <p>
-        Soy José Adrián Criscione, especialista en marketing digital con amplia
+        Especialista en datos y marketing digital con amplia
         experiencia en Google Analytics 4, Google Tag Manager, Google Ads y
         Facebook Business Manager. He liderado proyectos SEO exitosos, mejorando
         el posicionamiento orgánico y la autoridad web de diversos clientes. Mis
@@ -61,7 +59,7 @@
     
     <!-- Conocimientos -->
     <section id="conocimientos" class="conocimientos">
-      <h2>Conocimientos</h2>
+      <h2 class="mukta-bold">Conocimientos</h2>
       <div class="conocimientos-grid">
         <!-- Proyecto 1 -->
         <article class="card">
@@ -110,7 +108,7 @@
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos ">
-      <h2>Proyectos</h2>
+      <h2 class="mukta-bold">Proyectos</h2>
       <div class="proyectos-grid">
         <!-- Proyecto 1 -->
         <article class="card proyectos">
@@ -145,24 +143,24 @@
 
 <!-- Redes sociales -->
 <aside id="redes" class="redes">
-  <h2>Conéctate conmigo</h2>
+  <h2 class="mukta-bold">Conéctate conmigo</h2>
   <ul>
     <li>
       <a href="https://github.com/Adrian-Criscione" target="_blank">
         <img src="img/github.png" alt="GitHub" class="icono-red">
-        GitHub
+        <p>GitHub</p>
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/jose-adrian-criscione/" target="_blank">
         <img src="img/linkedin.png" alt="LinkedIn" class="icono-red">
-        LinkedIn
+        <p>LinkedIn</p>
       </a>
     </li>
     <li>
       <a href="https://www.instagram.com/j.adrian.criscione/" target="_blank">
         <img src="img/ig.png" alt="Instagram" class="icono-red">
-        Instagram
+        <p>Instagram</p>
       </a>
     </li>
   </ul>
@@ -171,7 +169,7 @@
 
     <!-- Formulario de contacto -->
     <section id="contacto" class="contacto">
-      <h2 class=>Contacto</h2>
+      <h2 class="mukta-bold">Contacto</h2>
       <form action="enviar-formulario.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
@@ -180,14 +178,17 @@
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
         <button type="submit">Enviar</button>
+        <!-- Botón flotante de volver al inicio -->
       </form>
     </section>
 
     <!-- Pie de página -->
-    <footer class="">
+    <footer class="footer">
       <p>&copy; 2024 José Adrián Criscione. Todos los derechos reservados.</p>
     </footer>
-
     <script src="js/script.js"></script>
+    <a href="#" class="btn-flotante" id="volverInicio">
+      &#8679;
+    </a>  
   </body>
 </html>

@@ -91,9 +91,12 @@ section {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
+.center{
+    align-content: center;
+}
 /* Proyectos */
 .proyectos .proyecto {
     margin-bottom: 20px;
@@ -199,11 +202,24 @@ html {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+.card.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 .card:hover {
     transform: translateY(-10px);
 }
@@ -249,6 +265,12 @@ html {
         max-width: 350px;
     }
 }
+.redes h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .redes ul {
     list-style-type: none;
     padding: 0;
@@ -277,10 +299,10 @@ html {
   }
 
   /* Configuración del contenedor parallax */
-.parallax {
+.parallax{
     /* Tamaño del contenedor */
     height: 500px;
-    background-image: url(../images/background.jpg);
+    background-image: url(../img/background.jpg);
     background-attachment: fixed; /* Fijo para lograr el efecto parallax */
     background-position: center;
     background-repeat: no-repeat;
@@ -298,3 +320,58 @@ html {
     font-size: 24px;
   }
 
+  .informacion p {
+    font-size: 18px;
+    color: #362C28; /* Cambia el color del texto a un tono más claro para mejor contraste */
+    background-color: #FFF5B2; /* Usa un color de fondo más suave */
+    padding: 15px; /* Añade espacio interior para que el texto no toque los bordes */
+    border-radius: 10px; /* Bordes redondeados para un diseño más moderno */
+    line-height: 1.6; /* Mejora la legibilidad aumentando el espaciado entre líneas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para dar efecto de profundidad */
+    max-width: 1000px; /* Limita el ancho del párrafo para evitar que el texto se expanda demasiado */
+    margin: 20px auto; /* Centra el párrafo horizontalmente y añade espacio hacia arriba y abajo */
+}
+
+
+.mukta-extralight {
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .mukta-light {
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .mukta-regular {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .mukta-medium {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .mukta-semibold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .mukta-bold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .mukta-extrabold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  

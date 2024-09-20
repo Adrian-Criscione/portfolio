@@ -12,9 +12,15 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
     />
   </head>
-  <body class="parallax">
+  <body class="parallax .mukta-extrabold">
     <!-- Menú -->
     <header>
       <nav class="menu">
@@ -33,8 +39,8 @@
     <section id="presentacion" class="presentacion">
       <img src="img/mi-foto.jpeg" alt="Mi Foto" class="foto-presentacion" />
       
-      <h1>¡Hola! Soy Adrian</h1>
-      <p>Desarrollador Web apasionado por crear soluciones digitales.</p>
+      <h1 class="mukta-medium">¡Hola! Soy Adrian</h1>
+      <p class="mukta-regular">Desarrollador Web apasionado por crear soluciones digitales. Estudiante de programación en la UTN. </p>
 
     </section>
 
@@ -59,76 +65,76 @@
       <div class="conocimientos-grid">
         <!-- Proyecto 1 -->
         <article class="card">
-          <img src="img/html.png" alt="HTML">
+          <img src="img/html.png" width="100px" height="100px" alt="HTML">
           <h3>HMTL 5</h3>
         </article>
 
         <!-- Conocimiento 2 -->
         <article class="card">
-          <img src="img/css.png" alt="CSS 3">
+          <img src="img/css.png" width="100px" height="100px alt="CSS 3">
           <h3>CSS 3</h3>
         </article>
         <!-- Conocimiento 3 -->
         <article class="card">
-          <img src="img/cplusplus.png" alt="c++">
+          <img src="img/cplusplus.png" width="100px" height="100px alt="c++">
           <h3>C++</h3>
         </article>
         <!-- Conocimiento 4 -->
-        <article class="card">
-          <img src="img/csharp.png" alt="c#">
+        <article class="card"> 
+          <img src="img/csharp.png" width="100px" height="100px alt="c#">
           <h3>C#</h3>
         </article>
           <!-- Conocimiento 5 -->
           <article class="card">
-            <img src="img/data.png" alt="Ingeniería de Datos">
+            <img src="img/data.png" width="100px" height="100px alt="Ingeniería de Datos">
             <h3>Ingeniería de Datos</h3>
           </article>
         </article>
         <!-- Conocimiento 6 -->
         <article class="card">
-          <img src="img/looker.png" alt="Análisis de Datos">
+          <img src="img/looker.png" width="100px" height="100px alt="Análisis de Datos">
           <h3>Análisis de Datos</h3>
         </article>
                 <!-- Conocimiento 7 -->
                 <article class="card">
-                  <img src="img/ga4.png" alt="google Analytics 4">
+                  <img src="img/ga4.png" width="100px" height="100px alt="google Analytics 4">
                   <h3>Google Analytics 4</h3>
                 </article>
                         <!-- Conocimiento 8 -->
         <article class="card">
-          <img src="img/gtm.png" alt="Google Tag Manager">
+          <img src="img/gtm.png" width="100px" height="100px alt="Google Tag Manager">
           <h3>Google Tag Manager</h3>
         </article>
       </div>
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="proyectos">
+    <section id="proyectos" class="proyectos ">
       <h2>Proyectos</h2>
       <div class="proyectos-grid">
         <!-- Proyecto 1 -->
-        <article class="card">
+        <article class="card proyectos">
           <img src="img/proyecto-1.jpeg" alt="Proyecto 1">
           <h3>Cadenas</h3>
           <p>Trabajo práctico de laboratorio 1 en donde se realizo la replica de la libreria cstring en C++.</p>
           <a href="https://github.com/Adrian-Criscione/Proyecto-Cadenas" target="_blank">Ver en GitHub</a>
         </article>
         <!-- Proyecto 2 -->
-        <article class="card">
+        <article class="card proyectos">
           <img src="img/proyecto-2.jpeg" alt="Proyecto 2">
           <h3>Memotest</h3>
           <p>Trabajo práctico final de laboratorio 1 en donde se realizo el juego del memotest en C++.</p>
           <a href="https://github.com/Adrian-Criscione/tpfinal-lab1" target="_blank">Ver en GitHub</a>
         </article>
         <!-- Proyecto 3 -->
-        <article class="card">
+        <article class="card proyectos">
           <img src="img/proyecto-3.jpeg" alt="Proyecto 3">
           <h3>Sistema de Gestión</h3>
           <p>Trabajo practico final de laboratorio 2 en donde se realizao un sistema de gestion de empleados en C++.</p>
           <a href="https://github.com/Adrian-Criscione/Labo2-TP-Integrador" target="_blank">Ver en GitHub</a>
         </article>
         <!-- Proyecto 4 -->
-        <article class="card">
+        <article class="card proyectos">
           <img src="img/proyecto-4.jpeg" alt="Proyecto 4">
           <h3>Gestión de Artículos</h3>
           <p>Trabajo Práctico para Programación 3 desarrollado con winforms y C# en .Net Framework</p>
@@ -165,7 +171,7 @@
 
     <!-- Formulario de contacto -->
     <section id="contacto" class="contacto">
-      <h2>Contacto</h2>
+      <h2 class=>Contacto</h2>
       <form action="enviar-formulario.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />

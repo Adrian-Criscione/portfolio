@@ -10,14 +10,7 @@ inputs.forEach(input => {
         }
     });
 });
-// Función para mostrar mensaje de éxito
-function showSuccessMessage() {
-    const successMessage = document.createElement('div');
-    successMessage.classList.add('success-message');
-    successMessage.innerText = "¡Gracias por contactarme! Pronto me pondré en contacto contigo.";
-    form.appendChild(successMessage);
-    setTimeout(() => successMessage.remove(), 5000); // El mensaje desaparece después de 5 segundos
-}
+
 // Scroll suave al hacer clic en los enlaces del menú
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -37,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const mensaje = document.getElementById("mensaje");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Evitar envío del formulario real
+        // Evitar envío del formulario real
+        e.preventDefault(); 
 
         // Limpiar mensajes de error anteriores
         const errorMessages = document.querySelectorAll('.error-message');

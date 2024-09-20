@@ -1,102 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="parallax">
     <!-- Menú -->
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#presentacion">Inicio</a></li>
-                <li><a href="#informacion">Información General</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#redes">Redes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <ul>
+          <li><a href="#presentacion">Inicio</a></li>
+          <li><a href="#informacion">Información General</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#redes">Redes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Presentación inicial con foto -->
     <section id="presentacion" class="presentacion">
-        <img src="images/mi-foto.jpeg" alt="Mi Foto" class="foto-presentacion">
-        <h1>¡Hola! Soy Adrian</h1>
-        <p>Desarrollador Web apasionado por crear soluciones digitales.</p>
+      <img src="images/mi-foto.jpeg" alt="Mi Foto" class="foto-presentacion" />
+      
+      <h1>¡Hola! Soy Adrian</h1>
+      <p>Desarrollador Web apasionado por crear soluciones digitales.</p>
+
     </section>
 
     <!-- Información general -->
     <section id="informacion" class="informacion">
-        <h2>Información General</h2>
-        <p>Soy José Adrián Criscione, especialista en marketing digital con amplia experiencia en Google Analytics 4, 
-            Google Tag Manager, Google Ads y Facebook Business Manager. He liderado proyectos SEO exitosos, mejorando el posicionamiento orgánico 
-            y la autoridad web de diversos clientes. Mis habilidades en desarrollo web y programación me permiten ofrecer soluciones integrales a medida. 
-            Soy un profesional analítico y orientado a resultados, siempre a la vanguardia de las últimas tendencias del sector.</p>
-    </section>
-
-    <!-- Conocimientos -->
-    <section id="conocimientos" class="conocimientos">
-        <h2>Conocimientos</h2>
-        <ul>
-            <li><i class="fab fa-html5"></i> HTML5</li>
-            <li><i class="fab fa-css3-alt"></i> CSS3 (Flexbox, Grid)</li>
-            <li><i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fab fa-git"></i> Git & GitHub</li>
-            <li><i class="fas fa-cog"></i> C/C++</li>
-            <li><i class="fas fa-code"></i> C# .NET Framework</li>
-            <li><i class="fas fa-database"></i> Análisis e Ingeniería de Datos</li>
-        </ul>
+      <h2>Información General</h2>
+      <p>
+        Soy José Adrián Criscione, especialista en marketing digital con amplia
+        experiencia en Google Analytics 4, Google Tag Manager, Google Ads y
+        Facebook Business Manager. He liderado proyectos SEO exitosos, mejorando
+        el posicionamiento orgánico y la autoridad web de diversos clientes. Mis
+        habilidades en desarrollo web y programación me permiten ofrecer
+        soluciones integrales a medida. Soy un profesional analítico y orientado
+        a resultados, siempre a la vanguardia de las últimas tendencias del
+        sector.
+      </p>
     </section>
     
+    <!-- Conocimientos -->
+    <section id="conocimientos" class="conocimientos">
+      <h2>Conocimientos</h2>
+      <div class="conocimientos-grid">
+        <!-- Proyecto 1 -->
+        <article class="card">
+          <img src="Images/html.png" alt="HTML">
+          <h3>HMTL 5</h3>
+        </article>
+
+        <!-- Conocimiento 2 -->
+        <article class="card">
+          <img src="Images/css.png" alt="CSS 3">
+          <h3>CSS 3</h3>
+        </article>
+        <!-- Conocimiento 3 -->
+        <article class="card">
+          <img src="Images/cplusplus.png" alt="c++">
+          <h3>C++</h3>
+        </article>
+        <!-- Conocimiento 4 -->
+        <article class="card">
+          <img src="Images/csharp.png" alt="c#">
+          <h3>C#</h3>
+        </article>
+          <!-- Conocimiento 5 -->
+          <article class="card">
+            <img src="Images/data.png" alt="Ingeniería de Datos">
+            <h3>Ingeniería de Datos</h3>
+          </article>
+        </article>
+        <!-- Conocimiento 6 -->
+        <article class="card">
+          <img src="Images/looker.png" alt="Análisis de Datos">
+          <h3>Análisis de Datos</h3>
+        </article>
+                <!-- Conocimiento 7 -->
+                <article class="card">
+                  <img src="Images/ga4.png" alt="google Analytics 4">
+                  <h3>Google Analytics 4</h3>
+                </article>
+                        <!-- Conocimiento 8 -->
+        <article class="card">
+          <img src="Images/gtm.png" alt="Google Tag Manager">
+          <h3>Google Tag Manager</h3>
+        </article>
+      </div>
+    </section>
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto...</p>
-        </div>
-        <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto...</p>
-        </div>
+      <h2>Proyectos</h2>
+      <div class="proyectos-grid">
+        <!-- Proyecto 1 -->
+        <article class="card">
+          <img src="Images/proyecto-1.jpeg" alt="Proyecto 1">
+          <h3>Cadenas</h3>
+          <p>Trabajo práctico de laboratorio 1 en donde se realizo la replica de la libreria cstring en C++.</p>
+          <a href="https://github.com/Adrian-Criscione/Proyecto-Cadenas" target="_blank">Ver en GitHub</a>
+        </article>
+        <!-- Proyecto 2 -->
+        <article class="card">
+          <img src="Images/proyecto-2.jpeg" alt="Proyecto 2">
+          <h3>Memotest</h3>
+          <p>Trabajo práctico final de laboratorio 1 en donde se realizo el juego del memotest en C++.</p>
+          <a href="https://github.com/Adrian-Criscione/tpfinal-lab1" target="_blank">Ver en GitHub</a>
+        </article>
+        <!-- Proyecto 3 -->
+        <article class="card">
+          <img src="Images/proyecto-3.jpeg" alt="Proyecto 3">
+          <h3>Sistema de Gestión</h3>
+          <p>Trabajo practico final de laboratorio 2 en donde se realizao un sistema de gestion de empleados en C++.</p>
+          <a href="https://github.com/Adrian-Criscione/Labo2-TP-Integrador" target="_blank">Ver en GitHub</a>
+        </article>
+        <!-- Proyecto 4 -->
+        <article class="card">
+          <img src="Images/proyecto-4.jpeg" alt="Proyecto 4">
+          <h3>Gestión de Artículos</h3>
+          <p>Trabajo Práctico para Programación 3 desarrollado con winforms y C# en .Net Framework</p>
+          <a href="https://github.com/Adrian-Criscione/tp-winform-equipo-14B" target="_blank">Ver en GitHub</a>
+        </article>
+      </div>
     </section>
 
-    <!-- Redes -->
-    <section id="redes" class="redes">
-        <h2>Conéctate conmigo</h2>
-        <ul>
-            <li><a href="https://github.com/Adrian-Criscione" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/jose-adrian-criscione/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/j.adrian.criscione/" target="_blank">Instagram</a></li>
-        </ul>
-    </section>
+<!-- Redes sociales -->
+<aside id="redes" class="redes">
+  <h2>Conéctate conmigo</h2>
+  <ul>
+    <li>
+      <a href="https://github.com/Adrian-Criscione" target="_blank">
+        <img src="images/github.png" alt="GitHub" class="icono-red">
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/jose-adrian-criscione/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" class="icono-red">
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/j.adrian.criscione/" target="_blank">
+        <img src="images/ig.png" alt="Instagram" class="icono-red">
+        Instagram
+      </a>
+    </li>
+  </ul>
+</aside>
+
 
     <!-- Formulario de contacto -->
     <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <form action="enviar-formulario.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+      <h2>Contacto</h2>
+      <form action="enviar-formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
+    <!-- Pie de página -->
+    <footer class="">
+      <p>&copy; 2024 José Adrián Criscione. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
